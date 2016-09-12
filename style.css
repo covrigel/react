@@ -1,0 +1,16 @@
+.note{
+  background: salmon;
+  width: 100px;
+  height: 100px;
+  box-shadow: 2px 2px 2px 2px gray;
+  margin: 100px;
+}
+
+.btn{
+  margin-top: 10%;
+  margin-left: 50%;
+}
+
+input[type="checkbox"]{
+  margin-left: 500px;
+}
