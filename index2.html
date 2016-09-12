@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Index 2</title>
+  <script type="text/javascript" src="https://fb.me/react-0.13.3.js"></script>
+  <script type="text/javascript" src="https://fb.me/JSXTransformer-0.13.3.js"></script>
+  <style>
+    div {
+      background-color: blue;
+      width: 200px;
+      height: 200px;
+    }
+  </style>
+</head>
+<body>
+<script type="text/jsx">
+  var Box = React.createClass({
+    componentWillMount: function(){
+      alert("component is about to mount");
+    },
+
+    componentDidMount: function(){
+      alert("component did mount");
+    },
+
+    render: function(){
+      return <div></div>;
+    }
+  });
+
+  React.render(<Box />, document.body);
+
+  var getRidOfBox = document.getElementsByTagName("div")[0];
+  getRidOfBox.onclick = function(){
+    React.unmountComponentAtNode(document.body);
+    alert("Component is unmounted");
+  }
+</script>
+</body>
+</html>
