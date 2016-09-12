@@ -15,13 +15,6 @@
 <body>
 <script type="text/jsx">
   var Box = React.createClass({
-    componentWillMount: function(){
-      alert("component is about to mount");
-    },
-
-    componentDidMount: function(){
-      alert("component did mount");
-    },
 
     render: function(){
       return <div></div>;
@@ -30,11 +23,6 @@
 
   React.render(<Box />, document.body);
 
-  var getRidOfBox = document.getElementsByTagName("div")[0];
-  getRidOfBox.onclick = function(){
-    React.unmountComponentAtNode(document.body);
-    alert("Component is unmounted");
-  }
 </script>
 </body>
 </html>
