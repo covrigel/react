@@ -2,33 +2,25 @@
 <html>
 <head>
   <!-- jQuery -->
-  <script   src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"   integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="   crossorigin="anonymous"></script>
   <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+  <script   src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"   integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="   crossorigin="anonymous"></script>
   <!-- bootstrap -->
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <!-- react -->
   <script src="https://fb.me/react-0.13.3.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.15.0/babel.js"></script>
+  <!-- custom css -->
+  <link rel="stylesheet" type="text/css" href="style.css">
   <title></title>
 </head>
   <body>
     <div id="react-container"></div>
-    <script type="text/babel">
-      var MyComponent = React.createClass({
-        render: function(){
-          return <div>
-                  <h1>{this.props.text}</h1>
-                  <p>{this.props.children}</p>
-                 </div>;
-        }
-      });
-      React.render(<div>
-                    <MyComponent text="Text 1">This is text one</MyComponent>
-                    <MyComponent text="Text 2">This is text two</MyComponent>
-                    <MyComponent text="Text 3">This is text three</MyComponent>
-                  </div>, document.getElementById("react-container"));
+    <div id="react-container2"></div>
+    <script type="text/js">
+      
     </script>
     <script src="Node.js" type="text/jsx"></script>
+    <script src="Node2.js" type="text/jsx"></script>
   </body>
 </html>
